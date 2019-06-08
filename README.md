@@ -32,5 +32,8 @@ Using OpenCV functions "findChessboardCorners", "calibrateCamera" and "undistort
 
 The attached image below is an example of the result of the distortion correction image by applying the OpenCV function "undistort" to one of the test images provided in the course. 
 
+![](Images/Example1.png)
+
+
 
 
