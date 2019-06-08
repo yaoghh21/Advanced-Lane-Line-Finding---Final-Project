@@ -24,4 +24,13 @@ The code for this step is contained in the first two code cells in the iPython J
 
 Using OpenCV functions "findChessboardCorners", "calibrateCamera" and "undistort", we achieve a good camera calibration and correection for distortion. Images of chessboards are provided, assuming different angles from a single camera point of view. We start by mapping "object points" using the function "findChessboardCorners", defined as the 3D real world coordinates of the corners in every image of the chessboards, then we will transform "object points" to 2D "image points" assuming z = 0. Both object points and image points are appended in two different arrays and then passed to the "calibrateCamera" function to compute the camera calibration and distortion coefficients, which are passed to the "undistort" function to apply the correction to the image with the following result: 
 
+![](Images/Undistorted%20Checkerboard.png)
+
+# Pipeline
+
+1. Provide an example of a distortion-corrected images
+
+The attached image below is an example of the result of the distortion correction image by applying the OpenCV function "undistort" to one of the test images provided in the course. 
+
+
 
