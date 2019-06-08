@@ -13,3 +13,11 @@ The goals / steps of this project are the following:
 
 
 * Note: Make sure you use the correct grayscale conversion depending on how you've read in your images. Use cv2.COLOR_RGB2GRAY if you've read in an image using mpimg.imread(). Use cv2.COLOR_BGR2GRAY if you've read in an image using cv2.imread().'
+
+# Rubric points
+Here I will consider the Rubric points individually and describe how I addressed each point in my implementation
+
+# Camera Calibration
+1. Briefly describe how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image
+
+The code for this step is contained in the first two code cells in the iPython Jupyter codebok  
