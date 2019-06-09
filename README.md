@@ -54,5 +54,8 @@ Here is the result of the binary image after combining the two binary thresholds
 
 There is a function in my code called "Filter_Region" which create a mask using the vertices from the function "Select_Region" and apply them to the input image. To map the points in the input image to the different desired image points with the new perspective (bird's eye view in our case), I decided to manually select the region of interest by selecting 4 points that define a trapezoid in the input image to obtain the following image.   
 
+![](Images/RegionOfInterest.png)
+
+
 
 
