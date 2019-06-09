@@ -60,9 +60,18 @@ There is a function in my code called "Filter_Region" which create a mask using 
 
 Once the region of interest is defined I use the "warp" function clearly labeled in my Jupyter notebooks, to indicate 4 source points from our "region of interest" image and where we want those 4 points to appear and finally are transformed to the warped image.
 
+Note: It is important to notice that at this point we also calculate the inverse perspective transform value "Minv", which will be utilized later on to unwarp the image. 
+
 ![](Images/4src4dst.png)
 
 ![](Images/WarpedImage.png)
+
+**4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?**
+
+In order to identify the lane line pixels and fit the positions with polynomial I used the functions "find_lane_pixels" which is the sliding windows method and "search_around_poly" which is the search from prior method and both are labeled in my Jupyter Notebook file. 
+
+The first function "find_lane_pixels" computes the histogram of the half bottom of the image, then computes the max value for eah lane and use it as a starting point to draw the first of the windows (defined in the hyperparameters) which in the case of my function will draw 9 windows. Then the function identifies all the activated pixels for each line to use them to recenter every window and follow the line. Lastly it will extract the x and y pixels positions and it a second order polynomial to each using "np.polyfit" to then draw it also in the image. 
+
 
 
 
