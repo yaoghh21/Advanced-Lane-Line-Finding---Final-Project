@@ -72,9 +72,7 @@ In order to identify the lane line pixels and fit the positions with polynomial 
 
 The first function "find_lane_pixels" computes the histogram of the half bottom of the image, then computes the max value for eah lane and use it as a starting point to draw the first of the windows (defined in the hyperparameters) which in the case of my function will draw 9 windows. Then the function identifies all the activated pixels for each line to use them to recenter every window and follow the line. Lastly it will extract the x and y pixels positions and it a second order polynomial to each using "np.polyfit" to then draw it also in the image. 
 
-![](Images/Histogram.png)
-
-![](Images/SlidingWindows1.png)
+![](Images/Histogram.png)   ![](Images/SlidingWindows1.png)
 
 
 
