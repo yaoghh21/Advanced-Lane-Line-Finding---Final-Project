@@ -44,7 +44,9 @@ To generate the binary image I started converting the undistorted image to HLS c
 
 I've decided to use the combination of S and L channels because they do a fairly robust job of picking up the white and yellow lines under very different color and contrast conditions, while other combinations that I also explored looked messy. Ultimately I decided to do a combination of gradient threshold and color threshold to combine them and achieve the final binary image. 
 
-![](Images/
+![](Images/ColorGradientThreshold.png)
+
+
 
 
 
