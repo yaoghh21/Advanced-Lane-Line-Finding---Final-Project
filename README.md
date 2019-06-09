@@ -75,5 +75,8 @@ The first function "find_lane_pixels" computes the histogram of the half bottom 
 ![](Images/Histogram.png)        ![](Images/SlidingWindows1.png)
 
 
+Then the second function "find_lane_pixels" creates a margin around the previous polynomial to search the lane pixels of the new frame. This can be done because the lane lines don't change too much between frames. 
+
+
 
 
