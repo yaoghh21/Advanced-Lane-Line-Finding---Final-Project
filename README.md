@@ -48,7 +48,7 @@ I've decided to use the combination of S and L channels because they do a fairly
 
 Here is the result of the binary image after combining the two binary thresholds. 
 
-![](Images/BinaryImage.png)
+![](Images/BinaryImage1.png)
 
 
 
