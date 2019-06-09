@@ -34,6 +34,5 @@ The attached image below is an example of the result of the distortion correctio
 
 ![](Images/Example1.png)
 
-
-
+The distortion correction can be noticed from the difference of the white vehicle baiased more to the center and the shape of the hood. 
 
