@@ -60,3 +60,5 @@ Here is the result of the binary image after combining the two binary thresholds
 
 
 
+
+
