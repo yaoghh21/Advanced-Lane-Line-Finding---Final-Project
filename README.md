@@ -58,6 +58,10 @@ There is a function in my code called "Filter_Region" which create a mask using 
 
 ![](Images/RegionOfInteres1.png)
 
-Once the region of interest is defined I use the "warp" function clearly labeled in my Jupyter notebooks, to 
+Once the region of interest is defined I use the "warp" function clearly labeled in my Jupyter notebooks, to indicate 4 source points from our "region of interest" image and where we want those 4 points to appear and are transformed to the warped image.
+
+
+
+
 
 
