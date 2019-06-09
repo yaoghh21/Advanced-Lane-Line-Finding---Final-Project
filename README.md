@@ -80,5 +80,12 @@ Then the second function "find_lane_pixels" creates a margin around the previous
 
 ![](Images/Screen%20Shot%202019-06-09%20at%201.16.37%20PM.png)
 
+**5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.**
+
+The radius of the curvature and distance to the center are caluclated with the function "curv_rad_and_center_dist" clearly labeled in my Jupyter Notebook. I did it by using the following lines of code: 
+
+**left_curverad = ((1 + (2*left_fit_cr[0]*y_eval*ym_per_pix + left_fit_cr[1])**2)**1.5) / np.absolute(2*left_fit_cr[0])
+right_curverad = ((1 + (2*right_fit_cr[0]*y_eval*ym_per_pix + right_fit_cr[1])**2)**1.5) / np.absolute(2*right_fit_cr[0])**
+
 
 
