@@ -40,6 +40,10 @@ The distortion correction can be noticed from the difference of the white vehicl
 
 To generate the binary image I started converting the undistorted image to HLS color space and separted the color channels to l_channel and s_channel. 
 
+![](Images/HLS.png)
+
+I've decided to use the combination of S and L channels because they do a fairly robust job of picking up the lines under very different color and contrast conditions, while other combination look messy to me. 
+
 
 
 
