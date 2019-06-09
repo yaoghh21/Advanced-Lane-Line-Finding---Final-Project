@@ -56,6 +56,6 @@ There is a function in my code called "Filter_Region" which create a mask using 
 
 ![](Images/RegionOfInteres1.png)
 
-
+Once the region of interest is defined I use the "warp" function clearly labeled in my Jupyter notebooks, to 
 
 
