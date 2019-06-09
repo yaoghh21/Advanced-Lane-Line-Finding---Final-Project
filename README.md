@@ -38,7 +38,9 @@ The distortion correction can be noticed from the difference of the white vehicl
 
 **2.Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a threshold binary image. Provide an example of a binary image result.**
 
-To generate the binary image I started converting the undistorted image to HLS color space and separted the color channels to l_channel and s_channel as they have the lower saturation value and I found that combination convenient to use it for the sobe later on. Here is an example of the separated channels. 
+To generate the binary image I started converting the undistorted image to HLS color space and separted the color channels to l_channel and s_channel. 
+
+
 
 
 
