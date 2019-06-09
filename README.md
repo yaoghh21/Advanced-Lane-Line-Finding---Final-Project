@@ -78,5 +78,7 @@ The first function "find_lane_pixels" computes the histogram of the half bottom 
 Then the second function "find_lane_pixels" creates a margin around the previous polynomial to search the lane pixels of the new frame. This can be done because the lane lines don't change too much between frames. 
 
 
+![](Images/Screen%20Shot%202019-06-09%20at%201.16.37%20PM.png)
+
 
 
