@@ -88,4 +88,14 @@ The radius of the curvature and distance to the center are caluclated with the f
 right_curverad = ((1 + (2*right_fit_cr[0]*y_eval*ym_per_pix + right_fit_cr[1])**2)**1.5) / np.absolute(2*right_fit_cr[0])**
 
 
+In the aquations above for the left curve, **left_fit_cr[0]** is the first coefficient (the y-squared coefficient) of the second order polynomial fit, and **left_fit_cr[1]** is the second coefficient, **y_eval** is the y position within the image upon which the curvature calculation is based (the bottom most y position in the image). Then **ym_per_pix** is the factor used for converting from pixels to meters. This convestion was also used to generate a new fit with coefficients in terms of meters. The same principle applies for right curve.  
 
+After the radius of the curves are calculated I proceed to calculate the position of the vehicle with respect to the center with the following equation: 
+
+**      car_position = bin_img.shape[1]/2
+        l_fit_x_int = l_fit[0]*h**2 + l_fit[1]*h + l_fit[2]
+        r_fit_x_int = r_fit[0]*h**2 + r_fit[1]*h + r_fit[2]
+        lane_center_position = (r_fit_x_int + l_fit_x_int) /2
+        center_dist = (car_position - lane_center_position) * xm_per_pix **
+        
+        
