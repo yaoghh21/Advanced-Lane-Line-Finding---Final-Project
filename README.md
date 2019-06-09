@@ -62,7 +62,7 @@ Once the region of interest is defined I use the "warp" function clearly labeled
 
 ![](Images/4src4dst.png)
 
-
+![](Images/WarpedImage.png)
 
 
 
