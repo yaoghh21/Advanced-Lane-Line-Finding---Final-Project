@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 Here I will consider the Rubric points individually and describe how I addressed each point in my implementation
 
 # Camera Calibration
-1. Briefly describe how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image
+**1. Briefly describe how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image**
 
 The code for this step is contained in the first two code cells in the iPython Jupyter codebook "Final_Project - Advanced Computer Vision.ipynb".
 
@@ -28,9 +28,19 @@ Using OpenCV functions "findChessboardCorners", "calibrateCamera" and "undistort
 
 # Pipeline
 
-1. Provide an example of a distortion-corrected images
+**1. Provide an example of a distortion-corrected images**
 
 The attached image below is an example of the result of the distortion correction image by applying the OpenCV function "undistort" to one of the test images provided in the course. 
+
+![](Images/Example1.png)
+
+The distortion correction can be noticed from the difference of the white vehicle baiased to the right and also by difference in the shape of the hood. 
+
+**2.Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a threshold binary image. Provide an example of a binary image result.**
+
+To generate the binary image I started converting the undistorted image to HLS color space and separted the color channels to l_channel and s_channel. 
+
+
 
 
 
