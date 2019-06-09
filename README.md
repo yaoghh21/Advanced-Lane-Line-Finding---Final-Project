@@ -38,7 +38,7 @@ The distortion correction can be noticed from the difference of the white vehicl
 
 **2.Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a threshold binary image. Provide an example of a binary image result.**
 
-To generate the binary image I started converting the undistorted image to HLS color space and separted the color channels to l_channel and s_channel. 
+To generate the binary image I started converting the undistorted image to HLS color space and separted the color channels to l_channel and s_channel. All these steps are labeled clearly in the Jupyter Notebooks file. 
 
 ![](Images/HLS.png)
 
@@ -46,19 +46,13 @@ I've decided to use the combination of S and L channels because they do a fairly
 
 ![](Images/ColorGradientThreshold.png)
 
-Here is the result of the binary image after combining the two binary thresholds. 
+Here is the result of the binary image after combining the two binary thresholds, which I also applied some smoothing. 
 
 ![](Images/BinaryImage1.png)
+              
+**3.Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.**
 
-
-
-
-
-
-
-
-
-
+There is a function in my code called "Filter_Region" which create a mask using the vertices from the function "Select_Region" and apply them to the input image. To map the points in the input image to the different desired image points with the new perspective (bird's eye view in our case), I decided to manually select the region of interest by selecting 4 points that define a trapezoid in the input image to obtain the following image.   
 
 
 
