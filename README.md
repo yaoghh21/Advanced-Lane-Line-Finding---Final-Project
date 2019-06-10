@@ -92,10 +92,5 @@ In the aquations above for the left curve, **left_fit_cr[0]** is the first coeff
 
 After the radius of the curves are calculated I proceed to calculate the position of the vehicle with respect to the center with the following equation: 
 
-**      car_position = bin_img.shape[1]/2
-        l_fit_x_int = l_fit[0]*h**2 + l_fit[1]*h + l_fit[2]
-        r_fit_x_int = r_fit[0]*h**2 + r_fit[1]*h + r_fit[2]
-        lane_center_position = (r_fit_x_int + l_fit_x_int) /2
-        center_dist = (car_position - lane_center_position) * xm_per_pix **
         
         
