@@ -105,4 +105,20 @@ For this step I used the functions "warp_b" to warp the detected lane boundaries
 
 I finally use the function "visual display" to output a visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position 
 
+![](Images/VisualOutput.png)
+
+# Pipeline(video)
+
+**1. Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).**
+
+Here is a link to my video: https://youtu.be/jbsBxRbOjLM
+
+# Discussion
+
+Here I'll talk about the approach I took and the main issues I went through to achieve the result posted in the link above.
+I didn't do anything different from the content in the course, actually I followed every step/goal as depicted in the project rubric/template. The most challenging part for me was to understand how to use the properties of the class lane to determine when to use the sliding windows method or the search around method. The pipeline has opportunities for improvements to determine the source points and the destination points when warping the image.
+I was fascinated about the sliding windows method and how it all starts with the histogram peaks, but the hardest part was to really make sense of the code when using polyfit to fit a polynomial with the activated pixels for each line and then how to iterate going up to the lane sliding the widnows defined in the hypeparameters.
+The other challenging part was to install moviepy in my computer, as the imageo lib had a version issue that took me a long time to resolve. I thought that Anaconda resolved most of the problems of the libraries versioning issues when it comes to libraries but it seems that this one was not the case.
+This was a fun project and I learned a lot of computer vision. I can say I am delighted in developing a decent lane line detection algorithm.
+Thanks,
 
