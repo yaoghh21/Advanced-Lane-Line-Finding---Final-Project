@@ -92,5 +92,13 @@ In the aquations above for the left curve, **left_fit_cr[0]** is the first coeff
 
 After the radius of the curves are calculated I proceed to calculate the position of the vehicle with respect to the center with the following equation: 
 
-        
+![](Images/Center.png)   
+
+In the equation above "r_fit_x_int" and "l_fit_x_int" are the x-intercepts of the right and left fits. The lane center position is the sum of the intercepts divided by 2. The Center distance is calculated by subtracting "car position" minus the "lane center position" times the meters per pixel to have the units in meters. 
+
+**6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.**
+
+For this step I used the functions "warp_b" to warp the detected lane boundaries back onto the original image, the function can be found clearly labeled and decribed step by step in my Jupyter Notebooks file. Note: Here is where "Minv" coefficient is utilized. 
+
+
         
