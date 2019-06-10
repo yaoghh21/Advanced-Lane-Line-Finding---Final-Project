@@ -101,4 +101,8 @@ In the equation above "r_fit_x_int" and "l_fit_x_int" are the x-intercepts of th
 For this step I used the functions "warp_b" to warp the detected lane boundaries back onto the original image, the function can be found clearly labeled and decribed step by step in my Jupyter Notebooks file. Note: Here is where "Minv" coefficient is utilized. 
 
 
-        
+![](Images/Warpb.png)
+
+I finally use the function "visual display" to output a visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position 
+
+
